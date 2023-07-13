@@ -22,12 +22,17 @@
 }
 
 /* Global */
-.page-body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
+.html, .page-body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
 
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
@@ -48,6 +53,7 @@ a {
 
 /* Blocks */
 .header {
+  flex-shrink: 0;
   padding: 1em 0;
 
   border-bottom: 3px solid black;
@@ -109,5 +115,7 @@ a {
 }
 
 .footer {
+  flex-shrink: 0;
+
   border-top: 3px solid black;
 }

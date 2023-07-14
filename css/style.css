@@ -25,14 +25,12 @@
 .html, .page-body {
   margin: 0;
   padding: 0;
-
-  overflow: hidden;
 }
 
 .page-body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100dvh;
 
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
@@ -119,4 +117,8 @@ a {
   flex-shrink: 0;
 
   border-top: 3px solid black;
+}
+
+.footer__text {
+  font-size: 12px;
 }

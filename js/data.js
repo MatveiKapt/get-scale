@@ -1,4 +1,4 @@
-const Scales = [
+const SCALES = [
   {
     name: 'C',
   },
@@ -96,7 +96,7 @@ const getRandomInteger = (start, end) => {
 };
 
 const getRandomScale = () => {
-  return Scales[getRandomInteger(0, Scales.length - 1)].name;
+  return SCALES[getRandomInteger(0, SCALES.length - 1)].name;
 };
 
 export { getRandomScale };
